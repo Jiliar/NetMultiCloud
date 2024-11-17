@@ -1,4 +1,4 @@
-Usuarios.Domain
+```Usuarios.Domain
 │
 ├── Aggregates
 │   └── UserAggregate
@@ -18,4 +18,5 @@ Usuarios.Domain
 │   └── IUserRepository.cs
 │
 └── Services
-    └── UserService.cs
+└── UserService.cs
+```
