@@ -1,0 +1,29 @@
+(Instalacion de dotnet version 8)
+https://dotnet.microsoft.com/es-es/download/dotnet/thank-you/sdk-8.0.301-windows-x64-installer
+
+(Instalacion de VS Code)
+https://code.visualstudio.com/
+
+(Creacion de DB)
+https://console.neon.tech/
+
+
+(Creacion de solucion)
+dotnet new globaljson --sdk-version 8.0.404 --force
+dotnet new sln --name Usuarios
+dotnet new webapi -o src/Usuarios/Usuarios.Api
+dotnet sln add .\src\Usuarios\Usuarios.Api\Usuarios.Api.csproj
+
+(compilaciconny ejecucion)
+code .
+cd .\src\Usuarios\Usuarios.Api
+dotnet build
+dotnet run
+
+(Base de datos Params)
+PGHOST='ep-dawn-rain-a5o6eroh.us-east-2.aws.neon.tech'
+PGDATABASE='usuarios'
+PGUSER='usuarios_owner'
+PGPASSWORD='RLk1syTCv4Yq'
+
+http://localhost:5229/api/user/------
